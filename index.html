@@ -1,0 +1,1319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SERENITY — Contemporary Fashion</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="navbar" id="navbar">
+
+        <a href="#home" class="logo">
+            SERENITY
+        </a>
+
+        <nav class="nav-menu" id="navMenu">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#collection" class="nav-link">Collection</a>
+            <a href="#lookbook" class="nav-link">Lookbook</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+
+        <!-- SHOPPING BAG -->
+        <button
+            class="bag-button"
+            id="bagButton"
+            type="button"
+            onclick="openCart()"
+            aria-label="Open shopping bag"
+        >
+            BAG
+            <span id="cartCount">0</span>
+        </button>
+
+        <!-- MOBILE MENU -->
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            type="button"
+            aria-label="Open menu"
+        >
+            <span></span>
+            <span></span>
+        </button>
+
+    </header>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <main>
+
+
+        <!-- ================= HERO ================= -->
+        <section class="hero" id="home">
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+
+                <p class="hero-eyebrow">
+                    CONTEMPORARY FASHION
+                </p>
+
+                <h1 class="hero-title">
+                    SERENITY
+                </h1>
+
+                <p class="hero-subtitle">
+                    Wear Your Confidence.
+                </p>
+
+                <a href="#collection" class="hero-button">
+                    <span>Explore Collection</span>
+                    <span class="button-arrow">↗</span>
+                </a>
+
+            </div>
+
+            <div class="hero-bottom">
+
+                <div class="hero-scroll">
+                    <span>Scroll to explore</span>
+                    <div class="scroll-line"></div>
+                </div>
+
+                <div class="hero-year">
+                    EST. 2024
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ABOUT ================= -->
+        <section class="about-section" id="about">
+
+            <div class="about-image reveal">
+
+                <img
+                    src="images/about/serenity-detail.jpg"
+                    alt="Serenity black t-shirt"
+                >
+
+            </div>
+
+
+            <div class="about-content reveal">
+
+                <p class="section-label">
+                    01 — ABOUT SERENITY
+                </p>
+
+                <h2>
+                    LESS,<br>
+                    <em>BUT BETTER.</em>
+                </h2>
+
+                <div class="about-line"></div>
+
+                <p class="about-text">
+                    SERENITY is a contemporary clothing brand built around
+                    simplicity, character, and confidence.
+                </p>
+
+                <p class="about-text">
+                    We believe that what you wear does not need to be loud
+                    to make a statement. Every piece is designed to become
+                    part of your everyday story.
+                </p>
+
+                <a href="#collection" class="text-link">
+                    Discover our collection
+                    <span>↗</span>
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= COLLECTION ================= -->
+        <section class="collection-section" id="collection">
+
+            <div class="section-heading reveal">
+
+                <div>
+
+                    <p class="section-label">
+                        02 — THE COLLECTION
+                    </p>
+
+                    <h2>
+                        ESSENTIAL<br>
+                        <em>IDENTITY.</em>
+                    </h2>
+
+                </div>
+
+                <p class="collection-intro">
+                    Pieces created with simplicity,
+                    comfort, and distinctive character.
+                </p>
+
+            </div>
+
+
+            <div class="product-grid">
+
+
+                <!-- PRODUCT 1 -->
+                <article class="product-card reveal">
+
+                    <div
+                        class="product-image"
+                        onclick="openProduct('signature-tee')"
+                    >
+
+                        <img
+                            src="images/products/serenity-front.jpg"
+                            alt="Serenity Signature Black T-Shirt"
+                        >
+
+                        <div class="product-overlay">
+
+                            <button
+                                class="view-product"
+                                type="button"
+                                onclick="event.stopPropagation(); openProduct('signature-tee')"
+                            >
+                                View Product
+                                <span>↗</span>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <div>
+
+                            <h3>
+                                SERENITY SIGNATURE TEE
+                            </h3>
+
+                            <p>
+                                Essential Collection
+                            </p>
+
+                        </div>
+
+                        <span class="product-number">
+                            01
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCT 2 -->
+                <article class="product-card reveal">
+
+                    <div
+                        class="product-image"
+                        onclick="openProduct('back-graphic')"
+                    >
+
+                        <img
+                            src="images/products/serenity-back.jpg"
+                            alt="Serenity Signature Back Graphic"
+                        >
+
+                        <div class="product-overlay">
+
+                            <button
+                                class="view-product"
+                                type="button"
+                                onclick="event.stopPropagation(); openProduct('back-graphic')"
+                            >
+                                View Product
+                                <span>↗</span>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <div>
+
+                            <h3>
+                                SIGNATURE BACK GRAPHIC
+                            </h3>
+
+                            <p>
+                                Statement Collection
+                            </p>
+
+                        </div>
+
+                        <span class="product-number">
+                            02
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+
+            <div class="collection-bottom reveal">
+
+                <p>
+                    Designed for those who choose
+                    <em>their own way.</em>
+                </p>
+
+                <a href="#lookbook" class="outline-link">
+                    Explore Lookbook
+                    <span>↗</span>
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= LOOKBOOK ================= -->
+        <section class="lookbook-section" id="lookbook">
+
+            <div class="lookbook-heading reveal">
+
+                <p class="section-label">
+                    03 — THE LOOKBOOK
+                </p>
+
+                <h2>
+                    WEAR THE<br>
+                    <em>MOMENT.</em>
+                </h2>
+
+            </div>
+
+
+            <div class="lookbook-grid">
+
+
+                <!-- LOOKBOOK 01 -->
+                <div class="lookbook-item lookbook-large reveal">
+
+                    <img
+                        src="images/lookbook/serenity-model-02.jpg"
+                        alt="Serenity Lookbook"
+                    >
+
+                    <div class="lookbook-caption">
+
+                        <span>
+                            01
+                        </span>
+
+                        <p>
+                            Everyday Confidence
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- LOOKBOOK 02 -->
+                <div class="lookbook-item reveal">
+
+                    <img
+                        src="images/products/serenity-front.jpg"
+                        alt="Serenity Front"
+                    >
+
+                    <div class="lookbook-caption">
+
+                        <span>
+                            02
+                        </span>
+
+                        <p>
+                            Essential Form
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- LOOKBOOK 03 -->
+                <div class="lookbook-item reveal">
+
+                    <img
+                        src="images/products/serenity-back.jpg"
+                        alt="Serenity Back Graphic"
+                    >
+
+                    <div class="lookbook-caption">
+
+                        <span>
+                            03
+                        </span>
+
+                        <p>
+                            Signature Identity
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= BRAND STATEMENT ================= -->
+        <section class="statement-section">
+
+            <div class="statement-content reveal">
+
+                <p class="section-label">
+                    SERENITY PHILOSOPHY
+                </p>
+
+                <h2>
+                    LESS NOISE.<br>
+                    MORE <em>YOU.</em>
+                </h2>
+
+                <p>
+                    Fashion is not about following every trend.
+                    It's about finding something that feels like you.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CONTACT ================= -->
+        <section class="contact-section" id="contact">
+
+            <div class="contact-content reveal">
+
+                <p class="section-label">
+                    04 — CONTACT
+                </p>
+
+                <h2>
+                    FIND YOUR<br>
+                    <em>SERENITY.</em>
+                </h2>
+
+                <p>
+                    Follow the journey and discover the latest
+                    pieces from SERENITY.
+                </p>
+
+                <a 
+                    href="https://www.instagram.com/s_errenity/" 
+                    class="hero-button"
+                    target="_blank"
+                    rel="noopener noreferrer"
+            >
+                 <span>Follow Serenity</span>
+    <span class="button-arrow">↗</span>
+</a>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- =====================================================
+         PRODUCT DETAIL MODAL
+         ===================================================== -->
+    <div
+        class="product-modal"
+        id="productModal"
+        aria-hidden="true"
+    >
+
+        <div
+            class="product-modal-overlay"
+            onclick="closeProduct()"
+        ></div>
+
+
+        <div
+            class="product-modal-content"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="modalProductName"
+        >
+
+            <!-- CLOSE -->
+            <button
+                class="modal-close"
+                type="button"
+                onclick="closeProduct()"
+                aria-label="Close product"
+            >
+                ×
+            </button>
+
+
+<!-- PRODUCT GALLERY -->
+<div class="product-modal-image">
+
+    <img
+        id="modalProductImage"
+        src=""
+        alt="SERENITY product"
+    >
+
+    <!-- PREVIOUS -->
+    <button
+        class="gallery-arrow gallery-prev"
+        type="button"
+        onclick="changeProductImage(-1)"
+        aria-label="Previous product image"
+    >
+        ←
+    </button>
+
+    <!-- NEXT -->
+    <button
+        class="gallery-arrow gallery-next"
+        type="button"
+        onclick="changeProductImage(1)"
+        aria-label="Next product image"
+    >
+        →
+    </button>
+
+    <!-- IMAGE INDICATOR -->
+    <div
+        class="gallery-dots"
+        id="galleryDots"
+    ></div>
+
+</div>
+
+
+            <!-- PRODUCT INFORMATION -->
+            <div class="product-modal-info">
+
+                <p
+                    class="section-label"
+                    id="modalProductCategory"
+                >
+                    COLLECTION
+                </p>
+
+                <h2 id="modalProductName">
+                    SERENITY SIGNATURE TEE
+                </h2>
+
+                <p
+                    class="modal-product-price"
+                    id="modalProductPrice"
+                >
+                    Rp 199.000
+                </p>
+
+                <div class="modal-divider"></div>
+
+                <p
+                    class="modal-product-description"
+                    id="modalProductDescription"
+                >
+                    Contemporary essential designed with a
+                    clean silhouette and distinctive SERENITY identity.
+                </p>
+
+
+                <!-- SIZE -->
+                <div class="product-option">
+
+                    <div class="option-heading">
+
+                        <span>
+                            SIZE
+                        </span>
+
+                        <span id="selectedSizeLabel">
+                            Select size
+                        </span>
+
+                    </div>
+
+                    <div class="size-options">
+
+                        <button
+                            type="button"
+                            class="size-button"
+                            onclick="selectSize('S', this)"
+                        >
+                            S
+                        </button>
+
+                        <button
+                            type="button"
+                            class="size-button"
+                            onclick="selectSize('M', this)"
+                        >
+                            M
+                        </button>
+
+                        <button
+                            type="button"
+                            class="size-button"
+                            onclick="selectSize('L', this)"
+                        >
+                            L
+                        </button>
+
+                        <button
+                            type="button"
+                            class="size-button"
+                            onclick="selectSize('XL', this)"
+                        >
+                            XL
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- QUANTITY -->
+                <div class="product-option">
+
+                    <div class="option-heading">
+
+                        <span>
+                            QUANTITY
+                        </span>
+
+                    </div>
+
+                    <div class="quantity-control">
+
+                        <button
+                            type="button"
+                            onclick="changeQuantity(-1)"
+                            aria-label="Decrease quantity"
+                        >
+                            −
+                        </button>
+
+                        <span id="productQuantity">
+                            1
+                        </span>
+
+                        <button
+                            type="button"
+                            onclick="changeQuantity(1)"
+                            aria-label="Increase quantity"
+                        >
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ADD TO CART -->
+                <button
+                    class="add-cart-button"
+                    type="button"
+                    onclick="addToCart()"
+                >
+                    <span>
+                        ADD TO BAG
+                    </span>
+
+                    <span>
+                        ↗
+                    </span>
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         SHOPPING BAG MODAL
+         ===================================================== -->
+    <div
+        class="cart-modal"
+        id="cartModal"
+        aria-hidden="true"
+    >
+
+        <div
+            class="cart-modal-overlay"
+            onclick="closeCart()"
+        ></div>
+
+
+        <aside
+            class="cart-panel"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="cartTitle"
+        >
+
+            <!-- CART HEADER -->
+            <div class="cart-header">
+
+                <div>
+
+                    <p class="section-label">
+                        YOUR SELECTION
+                    </p>
+
+                    <h2 id="cartTitle">
+                        SHOPPING BAG
+                    </h2>
+
+                </div>
+
+                <button
+                    class="modal-close"
+                    type="button"
+                    onclick="closeCart()"
+                    aria-label="Close shopping bag"
+                >
+                    ×
+                </button>
+
+            </div>
+
+
+            <!-- CART ITEMS -->
+            <div
+                class="cart-items"
+                id="cartItems"
+            >
+
+                <!-- Items generated by JavaScript -->
+
+            </div>
+
+
+            <!-- CART FOOTER -->
+            <div class="cart-footer">
+
+                <div class="cart-total">
+
+                    <span>
+                        TOTAL
+                    </span>
+
+                    <strong id="cartTotal">
+                        Rp 0
+                    </strong>
+
+                </div>
+
+                <button
+                    class="checkout-button"
+                    type="button"
+                    onclick="goToCheckout()"
+                >
+                    <span>
+                        PROCEED TO CHECKOUT
+                    </span>
+
+                    <span>
+                        ↗
+                    </span>
+                </button>
+
+                <p class="cart-note">
+                    Checkout and payment instructions will be
+                    available in the next step.
+                </p>
+
+            </div>
+
+        </aside>
+
+    </div>
+
+
+       </div>
+
+
+    <!-- =====================================================
+         CHECKOUT MODAL
+         ===================================================== -->
+
+    <div
+        class="checkout-modal"
+        id="checkoutModal"
+        aria-hidden="true"
+    >
+
+        <!-- OVERLAY -->
+
+        <div
+            class="checkout-modal-overlay"
+            onclick="closeCheckout()"
+        ></div>
+
+
+        <!-- CHECKOUT CONTENT -->
+
+        <div
+            class="checkout-modal-content"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="checkoutTitle"
+        >
+
+            <!-- CHECKOUT HEADER -->
+
+            <div class="checkout-header">
+
+                <div>
+
+                    <p class="section-label">
+                        SERENITY ORDER
+                    </p>
+
+                    <h2 id="checkoutTitle">
+                        CHECKOUT
+                    </h2>
+
+                </div>
+
+
+                <button
+                    class="modal-close"
+                    type="button"
+                    onclick="closeCheckout()"
+                    aria-label="Close checkout"
+                >
+                    ×
+                </button>
+
+            </div>
+
+
+            <!-- CHECKOUT BODY -->
+
+            <div class="checkout-body">
+
+
+                <!-- =================
+                     CUSTOMER INFORMATION
+                     ================= -->
+
+                <section class="checkout-section">
+
+                    <div class="checkout-section-heading">
+
+                        <span class="checkout-number">
+                            01
+                        </span>
+
+                        <div>
+
+                            <p class="section-label">
+                                CUSTOMER INFORMATION
+                            </p>
+
+                            <h3>
+                                YOUR DETAILS
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="checkout-form">
+
+                        <!-- NAME -->
+
+                        <div class="form-group">
+
+                            <label for="customerName">
+                                FULL NAME
+                            </label>
+
+                            <input
+                                type="text"
+                                id="customerName"
+                                name="customerName"
+                                placeholder="Your full name"
+                                autocomplete="name"
+                            >
+
+                            <small
+                                class="form-error"
+                                id="customerNameError"
+                            ></small>
+
+                        </div>
+
+
+                        <!-- WHATSAPP -->
+
+                        <div class="form-group">
+
+                            <label for="customerPhone">
+                                WHATSAPP NUMBER
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="customerPhone"
+                                name="customerPhone"
+                                placeholder="08xxxxxxxxxx"
+                                autocomplete="tel"
+                            >
+
+                            <small
+                                class="form-error"
+                                id="customerPhoneError"
+                            ></small>
+
+                        </div>
+
+
+                        <!-- EMAIL -->
+
+                        <div class="form-group">
+
+                            <label for="customerEmail">
+                                EMAIL ADDRESS
+                            </label>
+
+                            <input
+                                type="email"
+                                id="customerEmail"
+                                name="customerEmail"
+                                placeholder="you@example.com"
+                                autocomplete="email"
+                            >
+
+                            <small
+                                class="form-error"
+                                id="customerEmailError"
+                            ></small>
+
+                        </div>
+
+
+                        <!-- ADDRESS -->
+
+                        <div class="form-group form-group-full">
+
+                            <label for="customerAddress">
+                                SHIPPING ADDRESS
+                            </label>
+
+                            <textarea
+                                id="customerAddress"
+                                name="customerAddress"
+                                rows="4"
+                                placeholder="Complete shipping address"
+                                autocomplete="street-address"
+                            ></textarea>
+
+                            <small
+                                class="form-error"
+                                id="customerAddressError"
+                            ></small>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =================
+                     ORDER SUMMARY
+                     ================= -->
+
+                <section class="checkout-section">
+
+                    <div class="checkout-section-heading">
+
+                        <span class="checkout-number">
+                            02
+                        </span>
+
+                        <div>
+
+                            <p class="section-label">
+                                YOUR ORDER
+                            </p>
+
+                            <h3>
+                                ORDER SUMMARY
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        class="checkout-order-items"
+                        id="checkoutOrderItems"
+                    >
+
+                        <!-- Generated by JavaScript -->
+
+                    </div>
+
+
+                    <div class="checkout-summary">
+
+                        <div class="summary-row">
+
+                            <span>
+                                SUBTOTAL
+                            </span>
+
+                            <strong id="checkoutSubtotal">
+                                Rp 0
+                            </strong>
+
+                        </div>
+
+
+                        <div class="summary-row">
+
+                            <span>
+                                SHIPPING
+                            </span>
+
+                            <strong>
+                                FREE
+                            </strong>
+
+                        </div>
+
+
+                        <div class="summary-divider"></div>
+
+
+                        <div class="summary-row summary-total">
+
+                            <span>
+                                TOTAL
+                            </span>
+
+                            <strong id="checkoutTotal">
+                                Rp 0
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =================
+                     PAYMENT
+                     ================= -->
+
+                <section class="checkout-section">
+
+                    <div class="checkout-section-heading">
+
+                        <span class="checkout-number">
+                            03
+                        </span>
+
+                        <div>
+
+                            <p class="section-label">
+                                PAYMENT
+                            </p>
+
+                            <h3>
+                                BANK TRANSFER
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="payment-method">
+
+                        <div class="payment-method-top">
+
+                            <div>
+
+                                <span class="payment-label">
+                                    PAYMENT METHOD
+                                </span>
+
+                                <h4>
+                                    Bank Transfer
+                                </h4>
+
+                            </div>
+
+
+                            <span class="payment-status">
+                                AVAILABLE
+                            </span>
+
+                        </div>
+
+
+                        <div class="payment-divider"></div>
+
+
+                        <div class="bank-information">
+
+                            <p class="bank-label">
+                                SERENITY OFFICIAL ACCOUNT
+                            </p>
+
+                            <div class="bank-row">
+
+                                <span>
+                                    BANK
+                                </span>
+
+                                <strong>
+                                    BCA
+                                </strong>
+
+                            </div>
+
+
+                            <div class="bank-row">
+
+                                <span>
+                                    ACCOUNT NUMBER
+                                </span>
+
+                                <strong>
+                                    1234567890
+                                </strong>
+
+                            </div>
+
+
+                            <div class="bank-row">
+
+                                <span>
+                                    ACCOUNT NAME
+                                </span>
+
+                                <strong>
+                                    SERENITY
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="payment-note">
+
+                            <span>
+                                NOTE
+                            </span>
+
+                            <p>
+                                Please complete your payment after
+                                submitting the order. Keep your
+                                transfer receipt for confirmation.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =================
+                     CONFIRMATION
+                     ================= -->
+
+                <section class="checkout-section checkout-confirmation">
+
+                    <label class="confirmation-check">
+
+                        <input
+                            type="checkbox"
+                            id="paymentAgreement"
+                        >
+
+                        <span>
+                            I confirm that the information above
+                            is correct and I agree to complete
+                            payment through bank transfer.
+                        </span>
+
+                    </label>
+
+
+                    <small
+                        class="form-error"
+                        id="paymentAgreementError"
+                    ></small>
+
+
+                    <button
+                        type="button"
+                        class="place-order-button"
+                        onclick="placeOrder()"
+                    >
+
+                        <span>
+                            PLACE ORDER
+                        </span>
+
+                        <span>
+                            ↗
+                        </span>
+
+                    </button>
+
+                </section>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         ORDER SUCCESS MODAL
+         ===================================================== -->
+
+    <div
+        class="order-success-modal"
+        id="orderSuccessModal"
+        aria-hidden="true"
+    >
+
+        <div
+            class="order-success-overlay"
+            onclick="closeOrderSuccess()"
+        ></div>
+
+
+        <div
+            class="order-success-content"
+            role="dialog"
+            aria-modal="true"
+        >
+
+            <div class="success-icon">
+                ✓
+            </div>
+
+
+            <p class="section-label">
+                ORDER RECEIVED
+            </p>
+
+
+            <h2>
+                THANK YOU.
+            </h2>
+
+
+            <p class="success-message">
+                Your order has been received successfully.
+                Please complete the bank transfer using
+                the payment information provided.
+            </p>
+
+
+            <div class="order-number-box">
+
+                <span>
+                    ORDER NUMBER
+                </span>
+
+                <strong id="orderNumber">
+                    SRN-000000
+                </strong>
+
+            </div>
+
+
+            <div class="success-actions">
+
+                <button
+                    type="button"
+                    class="success-primary-button"
+                    onclick="closeOrderSuccess()"
+                >
+                    BACK TO SHOP
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
